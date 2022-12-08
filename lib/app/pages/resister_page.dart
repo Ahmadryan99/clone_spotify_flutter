@@ -30,10 +30,10 @@ class ResisterPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 10),
             child: Column(
               children: [
-                const SizedBox(height: 219),
+                const SizedBox(height: 150),
                 Container(
                   height: 71,
                   width: 235,
@@ -69,7 +69,7 @@ class ResisterPage extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: 520,
+            top: 465,
             left: 35,
             child: Material(
               color: const Color(
@@ -99,7 +99,7 @@ class ResisterPage extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: 520,
+            top: 465,
             left: 220,
             child: Material(
               color: Colors.white,
