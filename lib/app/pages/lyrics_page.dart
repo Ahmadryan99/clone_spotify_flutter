@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:clone_spotify_flutter/app/pages/music_page.dart';
+import 'package:clone_spotify_flutter/app/pages/home_page.dart';
 
 class LyricsPage extends StatefulWidget {
   const LyricsPage({super.key});
@@ -116,7 +118,7 @@ class _LyricsPageState extends State<LyricsPage> {
     return Container(
       height: 250,
       color: Colors.white,
-      padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 0),
+      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 0),
       child: Column(
         children: [
           ListTile(
@@ -145,7 +147,6 @@ class _LyricsPageState extends State<LyricsPage> {
             ),
             trailing: Image.asset('assets/images/Vector2.png'),
           ),
-          const SizedBox(height: 0),
           Slider(
             activeColor: const Color(0xff5C5C5C),
             value: _currentSliderValue,
@@ -157,9 +158,9 @@ class _LyricsPageState extends State<LyricsPage> {
               });
             },
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: 9),
           Padding(
-            padding: const EdgeInsets.only(left: 40, right: 40),
+            padding: const EdgeInsets.only(left: 23, right: 22),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
@@ -174,9 +175,9 @@ class _LyricsPageState extends State<LyricsPage> {
               ],
             ),
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: 15),
           Padding(
-            padding: const EdgeInsets.only(left: 45, right: 35),
+            padding: const EdgeInsets.only(left: 25, right: 25),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

@@ -27,7 +27,7 @@ class _ArticsPageState extends State<ArticsPage> {
             children: [
               Container(
                 child: SizedBox(
-                  width: 390,
+                  width: 500,
                   height: 240,
                   child: Image.asset(
                     'assets/images/wallpaper10.png',

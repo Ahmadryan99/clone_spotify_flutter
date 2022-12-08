@@ -40,11 +40,11 @@ class _ProfilPageState extends State<ProfilPage> {
               ],
             ),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Center(
             child: Column(
               children: [
-                Container(
+                SizedBox(
                   height: 93,
                   width: 93,
                   child: Image.asset(
@@ -52,16 +52,16 @@ class _ProfilPageState extends State<ProfilPage> {
                     fit: BoxFit.cover,
                   ),
                 ),
-                SizedBox(height: 11),
+                const SizedBox(height: 11),
                 Container(
-                  child: Text(
+                  child: const Text(
                     'oconk.based99@gmail.com',
                     style: TextStyle(fontSize: 13, fontWeight: FontWeight.w400),
                   ),
                 ),
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 Container(
-                  child: Text(
+                  child: const Text(
                     'Ahmad Ryan',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
                   ),
@@ -69,7 +69,7 @@ class _ProfilPageState extends State<ProfilPage> {
               ],
             ),
           ),
-          SizedBox(height: 18),
+          const SizedBox(height: 18),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -78,15 +78,15 @@ class _ProfilPageState extends State<ProfilPage> {
                 child: Column(
                   children: [
                     Container(
-                      child: Text(
+                      child: const Text(
                         '778',
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.w700),
                       ),
                     ),
-                    SizedBox(height: 1),
+                    const SizedBox(height: 1),
                     Container(
-                      child: Text(
+                      child: const Text(
                         'Followes',
                         style: TextStyle(
                             fontSize: 14, fontWeight: FontWeight.w400),
@@ -101,15 +101,15 @@ class _ProfilPageState extends State<ProfilPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      child: Text(
+                      child: const Text(
                         '243',
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.w700),
                       ),
                     ),
-                    SizedBox(height: 1),
+                    const SizedBox(height: 1),
                     Container(
-                      child: Text(
+                      child: const Text(
                         'Followes',
                         style: TextStyle(
                             fontSize: 14, fontWeight: FontWeight.w400),
@@ -120,15 +120,15 @@ class _ProfilPageState extends State<ProfilPage> {
               ),
             ],
           ),
-          SizedBox(height: 40),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 28),
+          const SizedBox(height: 40),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 28),
             child: Text(
               'PUBLIC PLAYLIST',
               style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700),
             ),
           ),
-          SizedBox(height: 17),
+          const SizedBox(height: 17),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 0),
             child: Column(
@@ -147,10 +147,10 @@ class _ProfilPageState extends State<ProfilPage> {
                     ),
                     trailing: Row(
                       mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const Text('5:33'),
+                      children: const [
+                        Text('5:33'),
                         Padding(
-                          padding: const EdgeInsets.only(left: 44),
+                          padding: EdgeInsets.only(left: 44),
                           child: Icon(Icons.more_horiz_rounded),
                         )
                       ],
@@ -169,24 +169,25 @@ class _ProfilPageState extends State<ProfilPage> {
                     ),
                     trailing: Row(
                       mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const Text('3:43'),
+                      children: const [
+                        Text('3:43'),
                         Padding(
-                          padding: const EdgeInsets.only(left: 44),
+                          padding: EdgeInsets.only(left: 44),
                           child: Icon(Icons.more_horiz_rounded),
                         )
                       ],
                     )),
                 ListTile(
                     leading: Image.asset('assets/images/wallpaper15.png'),
-                    title: const Text('Super Freaky Girl'),
+                    title: const Text('Super Freaky Girl',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),),
                     subtitle: const Text('Nicki Minaj'),
                     trailing: Row(
                       mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const Text('5:33'),
+                      children: const [
+                        Text('5:33'),
                         Padding(
-                          padding: const EdgeInsets.only(left: 44),
+                          padding: EdgeInsets.only(left: 44),
                           child: Icon(Icons.more_horiz_rounded),
                         )
                       ],
@@ -205,10 +206,10 @@ class _ProfilPageState extends State<ProfilPage> {
                     ),
                     trailing: Row(
                       mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const Text('3:43'),
+                      children: const [
+                        Text('3:43'),
                         Padding(
-                          padding: const EdgeInsets.only(left: 44),
+                          padding: EdgeInsets.only(left: 44),
                           child: Icon(Icons.more_horiz_rounded),
                         )
                       ],
@@ -227,10 +228,10 @@ class _ProfilPageState extends State<ProfilPage> {
                     ),
                     trailing: Row(
                       mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const Text('3:43'),
+                      children: const [
+                        Text('3:43'),
                         Padding(
-                          padding: const EdgeInsets.only(left: 44),
+                          padding: EdgeInsets.only(left: 44),
                           child: Icon(Icons.more_horiz_rounded),
                         )
                       ],
@@ -249,10 +250,10 @@ class _ProfilPageState extends State<ProfilPage> {
                     ),
                     trailing: Row(
                       mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const Text('3:43'),
+                      children: const [
+                        Text('3:43'),
                         Padding(
-                          padding: const EdgeInsets.only(left: 44),
+                          padding: EdgeInsets.only(left: 44),
                           child: Icon(Icons.more_horiz_rounded),
                         )
                       ],
@@ -271,10 +272,10 @@ class _ProfilPageState extends State<ProfilPage> {
                     ),
                     trailing: Row(
                       mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const Text('3:43'),
+                      children: const [
+                        Text('3:43'),
                         Padding(
-                          padding: const EdgeInsets.only(left: 44),
+                          padding: EdgeInsets.only(left: 44),
                           child: Icon(Icons.more_horiz_rounded),
                         )
                       ],
