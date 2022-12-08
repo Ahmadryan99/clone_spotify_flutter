@@ -32,26 +32,22 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.symmetric(horizontal: 10),
         child: ListView(
           children: <Widget>[
-            const SizedBox(height: 36),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 29),
-              child: Column(
-                children: [
-                  const SizedBox(height: 11),
-                  Container(
-                    height: 33,
-                    width: 110,
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage('assets/images/logo.png'),
-                          fit: BoxFit.cover),
-                    ),
-                  )
-                ],
-              ),
+            Column(
+              children: [
+                const SizedBox(height: 11),
+                Container(
+                  height: 45,
+                  width: 150,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage('assets/images/logo.png'),
+                        fit: BoxFit.cover),
+                  ),
+                )
+              ],
             ),
             const SizedBox(height: 80),
             Container(
@@ -83,20 +79,23 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               ],
             ),
             const SizedBox(height: 10),
-            Container(
-              padding: const EdgeInsets.all(10),
-              child: TextField(
-                controller: nameController,
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(25))),
-                  labelText: 'Enter User Name Or Email',
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15),
+              child: Container(
+                padding: const EdgeInsets.all(11),
+                child: TextField(
+                  controller: nameController,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(25))),
+                    labelText: 'Enter User Name Or Email',
+                  ),
                 ),
               ),
             ),
             const SizedBox(height: 6),
             Container(
-              padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+              padding: const EdgeInsets.symmetric(horizontal: 25),
               child: TextField(
                 obscureText: true,
                 controller: passwordController,
@@ -136,45 +135,51 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 MaterialPageRoute(builder: (context) => const MainPage())
                 );
               },
-              child: Container(
-                decoration: const BoxDecoration(
-                    color: Color(0xff42C83C),
-                    borderRadius: BorderRadius.all(Radius.circular(28))),
-                height: 70,
-                width: 100,
-                alignment: Alignment.center,
-                padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
-                child: const Text(
-                  'Sign in',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w700),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25),
+                child: Container(
+                  decoration: const BoxDecoration(
+                      color: Color(0xff42C83C),
+                      borderRadius: BorderRadius.all(Radius.circular(28))),
+                  height: 70,
+                  width: 100,
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                  child: const Text(
+                    'Sign in',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w700),
+                  ),
                 ),
               ),
             ),
-            const SizedBox(height: 21),
-            Row(
-              children: [
-                Expanded(
-                  child: Container(
-                    margin: const EdgeInsets.only(left: 10, right: 20),
+            const SizedBox(height: 30),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      margin: const EdgeInsets.only(left: 10, right: 20),
+                      child: const Divider(
+                        color: Colors.black,
+                        height: 36,
+                      ),
+                    ),
+                  ),
+                  const Text('Or'),
+                  Expanded(
+                      child: Container(
+                    margin: const EdgeInsets.only(left: 20, right: 10),
                     child: const Divider(
                       color: Colors.black,
                       height: 36,
                     ),
-                  ),
-                ),
-                const Text('Or'),
-                Expanded(
-                    child: Container(
-                  margin: const EdgeInsets.only(left: 20, right: 10),
-                  child: const Divider(
-                    color: Colors.black,
-                    height: 36,
-                  ),
-                ))
-              ],
+                  ))
+                ],
+              ),
             ),
             const SizedBox(height: 1),
             Row(
@@ -182,7 +187,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               children: [
                 Container(
                   child: Container(
-                      padding: const EdgeInsets.all(20),
+                      padding: const EdgeInsets.all(30),
                       child: Image.asset(
                         'assets/images/logo1.png',
                         width: 30,

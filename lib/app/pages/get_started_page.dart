@@ -31,7 +31,7 @@ class GetStartedPage extends StatelessWidget {
                       fit: BoxFit.cover),
                 ),
               ),
-              const SizedBox(height: 400),
+              const SizedBox(height: 378),
               const Text('Enjoy listening To Musik',
                   style: TextStyle(
                     fontSize: 25,
